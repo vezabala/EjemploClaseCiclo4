@@ -1,0 +1,64 @@
+1)Ingresar al repositorio
+2)Crear carpeta para back y front
+3) en consola escribir npm init
+4) Cambiar punto de entrada por server.js
+5) En author dejar nombre de la empresa
+
+Necesitamos expres comunicador entre vack y front
+doc ent entorno de trabajo
+mong us mogo
+
+comando npm i
+1. npm i express dotenv mongoose
+
+Para el back:
+1. crear el app.js
+2. crear server.js
+En app.js cear variable que permita usar librerrias de js express
+const express= require("express");
+la constante app crea copia del objeto express
+const app = express();
+
+para java script toca exportar el app
+module.exports=app
+
+para server.js
+1. importar en una constante la clase app
+const app = require("./app");
+
+luego crear una carpeta en el back llamada config
+dentro de esta carpeta crear archivo config.env (viene siendo como el aplication properties en java)
+en el archivo configurar el puerto
+PORT=4000
+NODE_ENV = DEVELOPMENT (ESTO PARA INDICAR  que esta en entorno de desarrollo)
+
+Devuelta a server.js
+1. Declarar el servidor const server=app.listen(process.env.PORT) asi se declara metodos en javaScript
+(DE LA LINEA 3 A 
+
+2. //sETEAR EL ARCHIVO DE CONFIGURACION
+
+EJECUTAR LA APP:
+ejecutar el server: node ruta (node back/server.js)
+cerrar la ejecucion
+instalar nodemon (npm i nodemon --save-dev)
+
+-Modificar srpits en package.json
+ "scripts": {
+    "start": "node back/server.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon back/server",
+    "prod":"SET NODE_ENV=PRODUCTION& nodemon back/server"
+  },
+
+despues de esto para correrlo se usa npm run dev
+
+CREAR CONTROLADORES
+-Crear controladores dentro del back
+
+exports.getProducts=(req,res,next) 
+req= requisito
+res = respuesta
+next = paso siguiente
+
+EN LA CARPETA RUTAS
+Crear la ruta del controlador
