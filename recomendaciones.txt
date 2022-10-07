@@ -62,3 +62,14 @@ next = paso siguiente
 
 EN LA CARPETA RUTAS
 Crear la ruta del controlador
+const express=require("express")
+const router= express.Router();
+
+Volver a app.js
+indicar el uso de jsons
+
+PARA BASE DE DATOS:
+Crear otra reminal y ir hasta la ruta C:\Program Files\MongoDB\Server\6.0\bin>
+conectar desde compass
+ejecutar mongod
+en tora consola ejecutar comando brew services run mongodb-community
