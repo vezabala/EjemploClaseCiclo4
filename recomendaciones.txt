@@ -73,3 +73,7 @@ Crear otra reminal y ir hasta la ruta C:\Program Files\MongoDB\Server\6.0\bin>
 conectar desde compass
 ejecutar mongod
 en tora consola ejecutar comando brew services run mongodb-community
+
+Conexion a la base de datos:
+1. crear archivo en el pakete config: database.js
+2. Crear en config.env variable DB_LOCAL_URI= mongodb://localhost:27017/coleccion(nombre de la base de datos)
