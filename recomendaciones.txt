@@ -79,3 +79,19 @@ Conexion a la base de datos:
 2. Crear en config.env variable DB_LOCAL_URI= mongodb://localhost:27017/coleccion(nombre de la base de datos)
 
 volver al databasejs y crear  constante mongoose
+
+Ir a la entidad productos.js
+crear cariable constante mongoose
+const mongoose = require("mongoose");
+hacer plantilla json
+trim:true, = elimina caracteres blancos
+Para relaciones con otra entidad, se genera ya su id
+Despues de crear el esquema exportar el modulo
+module.exports= mongoose.model("productos",productosShema);
+
+Volver al controlador de la entidad:
+importar la entidad productos
+crear metodo crear
+para el metodo create responde con un 201
+
+Crear la ruta en routes
