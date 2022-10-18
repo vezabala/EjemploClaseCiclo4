@@ -106,3 +106,30 @@ Se puede usar fetch para consultas acceso a recursos
 para instlar fetch se hace con el comando npm install node-fetch
 Para importarlo hacerlo de la siguiente manera:
 const fetch = (url) => import('node-fetch').then(({default:fetch}) => fetch(url));
+
+
+
+FRONTEND CON REACT
+Para empezar dirigirse en la consola a la carpeta front
+EJECUTAR: npx create-react-app .
+luego npm config set legacy-peer-deps true
+npm audit fix --force
+npx create-react-app@5.0.1 .
+npm i axios react-alert react-alert-template-basic react-bootstrap react-helmet react-redux redux redux-thunk redux-devtools-extension react-router-dom
+npm start para iniciar el servidor del front inicia en el puerto 3000
+para solucionar error importar: import React from 'react'; en app.js dentro de la carpeta src
+
+LIMPIAR EL FRONT:
+ir al public/index.html
+eliminar todos los comentarios
+crear favicon
+cambiarlo en el index
+ir al App.js y hacer modificaciones
+luego al index.js y eliminar comentarios
+crear carpeta en public que se llame images
+Eliminar App.test.js, index.css, logo.svg, reportWeb, setupTests
+Borrar todo lo de adentro de App.css
+index.js borrar reportWebVitals(); , import reportWebVitals from './reportWebVitals'; y import './index.css';
+Eliminar logo512
+
+Crear una carpeta dentro de src llamada components y dentro crear folder layouts
