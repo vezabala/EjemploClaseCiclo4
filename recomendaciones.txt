@@ -133,3 +133,15 @@ index.js borrar reportWebVitals(); , import reportWebVitals from './reportWebVit
 Eliminar logo512
 
 Crear una carpeta dentro de src llamada components y dentro crear folder layouts
+Crear archivo js en layout (Header.js) Nota: descargar extencion snippets ES7
+palabra de autocompletar racfe
+crear todo lo del navbar
+
+para llamarlo ir a App.js
+y llamarlo entre la function
+<Header />
+Crear archivo Footer.js
+palabra de autocompletar racfe
+crear todo lo del footer
+
+Llamarlo en el App.js
