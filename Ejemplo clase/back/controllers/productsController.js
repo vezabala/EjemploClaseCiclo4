@@ -1,4 +1,5 @@
 const producto = require("../models/productos")
+const fetch = (url) => import('node-fetch').then(({default:fetch}) => fetch(url)); //usurpación del require
 
 //Ver lista de productos
 exports.getProducts=async(req,res,next) =>{
@@ -74,3 +75,25 @@ exports.deleteProduct= async (req,res,next) =>{
         message:"Producto eliminado correctamente"
     })
 }
+
+
+//HABLEMOS DE FETCH
+//Ver todos los productos
+function verProductos(){
+    fetch('http://localhost:4000/api/productos')
+    .then(res => res.json())
+    .then(res=>console.log(res))
+    .catch(err=>console.error(err))
+}
+
+//verProductos(); LLamamos al metodo creado para probar la consulta
+
+//Ver por id
+function verProductoPorId(id){
+    fetch('http://localhost:4000/api/producto/'+id)
+    .then(res => res.json())
+    .then(res=>console.log(res))
+    .catch(err=>console.error(err))
+}
+
+//verProductoPorId('634d9be4fa6f87873472b313'); probamos el metodo con id

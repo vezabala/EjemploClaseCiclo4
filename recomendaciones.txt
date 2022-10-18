@@ -101,3 +101,8 @@ para la ruta de obtener por id el id se define :id
 
 Para update tener en cueta const, let y var
 const= nunca cambia, let= sujero a cambios, var= permisibo con todo
+
+Se puede usar fetch para consultas acceso a recursos
+para instlar fetch se hace con el comando npm install node-fetch
+Para importarlo hacerlo de la siguiente manera:
+const fetch = (url) => import('node-fetch').then(({default:fetch}) => fetch(url));
