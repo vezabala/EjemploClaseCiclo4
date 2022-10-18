@@ -1,10 +1,28 @@
 const producto = require("../models/productos")
 
 //Ver lista de productos
-exports.getProducts=(req,res,next) =>{
+exports.getProducts=async(req,res,next) =>{
+    const productos = await producto.find();
     res.status(200).json({
         sucess:true,
-        message: "En esta ruta usted va a poder ver todos los productos"
+        cantidad: productos.length,
+        productos
+    })
+}
+
+//Ver un producto por ID
+exports.getProductsById= async(req,res,next) =>{
+    const product = await producto.findById(req.params.id)
+    if (!product){
+        return res.status(404).json({
+            sucess:false,
+            message: 'No encontramos ese producto'
+        })
+    }
+    res.status(200).json({
+        sucess:true,
+        message: "Aqui abajo encuenta informacion sobre el producto: ",
+        product
     })
 }
 
@@ -17,3 +35,4 @@ exports.newProduct= async(req,res,next) =>{
         product
     })
 }
+

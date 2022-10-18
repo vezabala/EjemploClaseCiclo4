@@ -95,3 +95,6 @@ crear metodo crear
 para el metodo create responde con un 201
 
 Crear la ruta en routes
+
+en products controlers el get volverlo async
+para la ruta de obtener por id el id se define :id
