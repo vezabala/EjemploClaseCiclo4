@@ -145,3 +145,8 @@ palabra de autocompletar racfe
 crear todo lo del footer
 
 Llamarlo en el App.js
+
+
+Crear en la carpeta componentes HOME.js
+luego importarlo en el app.js
+treaer react-router-dom en app.js esto para enrutar en el front
