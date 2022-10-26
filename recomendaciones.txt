@@ -172,3 +172,13 @@ import {useDispatch} from 'react-redux'
 import { getProducts } from '../actions/productActions'
 dentro de la constante crear otra constanbte que es la dispatch
 en otra terminal ejecutar el back, y en otra la base de datos
+
+para que empiece a salir productos consumidos de la base de datos
+it a home.js y empezar a modificar
+importar routerdom para tomar id para ver detalle
+
+PARA CONTROL DE RRORES 
+ir al controlador de productos y modificar get productos para error
+luego ir al index.js: import { positions, transitions, Provider as AlertProvider } from 'react-alert';
+import AlertTemplate from 'react-alert-template-basic';
+volver al home y importal la alerta
