@@ -150,3 +150,25 @@ Llamarlo en el App.js
 Crear en la carpeta componentes HOME.js
 luego importarlo en el app.js
 treaer react-router-dom en app.js esto para enrutar en el front
+
+En Layout crear archivo MetaData.js y exportarlo
+luego en el home importarlo
+
+descargar extension de google redux devtools
+
+sobre el src crear store.js
+it luego al index.js y importarlo, tambien importar el proovedor para volver la aplicacion proveedor de servicios
+
+luego dentro del src crear carpeta constants y dentro crear archivo productConstants.js para ver estados
+Luego dentro del src crear carpeta reducer y dentro el archivo productReducer
+Luego crear carpeta actions y dentro el archivo productActions.js
+
+para conectar el back con el front es en el package.json del Front (ir ahi)
+colocar en las ultimas lineas ,
+  "proxy":"http://localhost:4000"
+volver al store y convocar un productReducer
+Ir al Home.js
+import {useDispatch} from 'react-redux'
+import { getProducts } from '../actions/productActions'
+dentro de la constante crear otra constanbte que es la dispatch
+en otra terminal ejecutar el back, y en otra la base de datos
