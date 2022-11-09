@@ -182,3 +182,11 @@ ir al controlador de productos y modificar get productos para error
 luego ir al index.js: import { positions, transitions, Provider as AlertProvider } from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic';
 volver al home y importal la alerta
+
+PAARA VER DETALLE DE PRODUCTO:
+Crear las constantes en product constants
+Luego en products reducer importarlas anteriores constantes y hacer metodo products detil reducer
+En store tarer productreducer y colocarlo en la constante reducer
+Luego en accions imortar las constantes y crear el metodo para ver detalle del producto
+Crear componente de product detail
+crear la ruta en el app.js
