@@ -190,3 +190,23 @@ En store tarer productreducer y colocarlo en la constante reducer
 Luego en accions imortar las constantes y crear el metodo para ver detalle del producto
 Crear componente de product detail
 crear la ruta en el app.js
+
+MANEJO DE ERRORES
+MIDEL WARE: INTERCOMUNIADOR
+ 
+dentro del back crear carpeta utils
+crear archivo dentro errorHandler.js
+crear carpeta llamada middleware
+crear archivo dentro llamada errors.js importar error habdler
+crear luego dentro archivo catchAsyncErrors.js
+Luego en el app.js crear la constante errorMiddleware
+en products controller y modificar los metodos con el catchAsyncErros
+
+AUTENTICACION:
+Crear el modelo de usuarios como auth.js
+Instalaciones:
+npm i bcryptjs jsonwebtoken validator nodemailer cookie-parser body-parser
+en el modelo crear el esquema del usuario
+Luego crear controlador de authController.js
+Luego hacer la ruta auth.js
+importarlo en el app.js
